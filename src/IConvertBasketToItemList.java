@@ -1,5 +1,5 @@
 
 public interface IConvertBasketToItemList
 {
-	IHoldDistinctItems convertToItemList(IHoldItems mockBasket);
+	IHoldDistinctItems convertToDistinctItemList(IHoldItems mockBasket);
 }

@@ -14,7 +14,7 @@ public class BasketToItemList implements IConvertBasketToItemList
     }
 
 	@Override
-	public IHoldDistinctItems convertToItemList(IHoldItems basket)
+	public IHoldDistinctItems convertToDistinctItemList(IHoldItems basket)
 	{
 		return mapToItemList.convert(basketToMap.convert(basket));
 	}

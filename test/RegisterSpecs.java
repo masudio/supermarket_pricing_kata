@@ -12,11 +12,11 @@ public class RegisterSpecs
 	public void whenAskedForReceipt_shouldReturnReceipt()
 	{
 		IConvertBasketToItemList mockItemTally = mock(IConvertBasketToItemList.class);
-		IConvertItemListToReceipt mockReceiptFormatter = mock(IConvertItemListToReceipt.class);
+		IConvertDistinctItemListToReceipt mockReceiptFormatter = mock(IConvertDistinctItemListToReceipt.class);
 		IHoldItems mockBasket = mock(IHoldItems.class);
 		IAmAReceipt expectedResult = mock(IAmAReceipt.class);
 		IHoldDistinctItems itemList = mock(IHoldDistinctItems.class);
-		stub(mockItemTally.convertToItemList(mockBasket)).toReturn(itemList);
+		stub(mockItemTally.convertToDistinctItemList(mockBasket)).toReturn(itemList);
 		stub(mockReceiptFormatter.convertToReceipt(itemList)).toReturn(expectedResult);
 		sut = new Register(mockItemTally, mockReceiptFormatter);
 		

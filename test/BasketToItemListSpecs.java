@@ -22,7 +22,7 @@ public class BasketToItemListSpecs
 		stub(mapToItemList.convert(mockMap)).toReturn(expectedResult);
 		sut = new BasketToItemList(basketToMap, mapToItemList);
 
-		IHoldDistinctItems result = sut.convertToItemList(mockBasket);
+		IHoldDistinctItems result = sut.convertToDistinctItemList(mockBasket);
 
 		assertEquals(expectedResult, result);
 	}

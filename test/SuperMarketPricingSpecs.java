@@ -14,7 +14,7 @@ public class SuperMarketPricingSpecs
 		IHoldItems mockBasket = mock(IHoldItems.class);
 		IAmAReceipt expectedResult = mock(IAmAReceipt.class);
 		stub(mockRegister.getReceipt(mockBasket)).toReturn(expectedResult);
-		sut = new SuperMarketPricing(mockRegister, null, mockBasket);
+		sut = new SuperMarketPricing(mockRegister, mockBasket);
 
 		IAmAReceipt result = sut.getReceipt();
 
@@ -22,13 +22,15 @@ public class SuperMarketPricingSpecs
 	}
 	
 	@Test
-	public void whenAskedForBillTotal_ShouldCallGetTotalOnCalculator()
+	public void whenAskedForBillTotal_ShouldCallGetTotalOnRegister()
 	{
-		ICalculateTotal mockCalculator = mock(ICalculateTotal.class);
+		IGetReceipt mockRegister = mock(IGetReceipt.class);
 		IHoldItems mockBasket = mock(IHoldItems.class);
+		IAmAReceipt mockReceipt = mock(IAmAReceipt.class);
 		IAmCurrency expectedResult = mock(IAmCurrency.class);
-		stub(mockCalculator.getTotal(mockBasket)).toReturn(expectedResult);
-		sut = new SuperMarketPricing(null, mockCalculator, mockBasket);
+		stub(mockRegister.getReceipt(mockBasket)).toReturn(mockReceipt);
+		stub(mockReceipt.getTotal()).toReturn(expectedResult);
+		sut = new SuperMarketPricing(mockRegister, mockBasket);
 
 		IAmCurrency result = sut.getTotal();
 

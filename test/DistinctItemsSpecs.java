@@ -1,5 +1,8 @@
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.mock;
+
+import java.util.Iterator;
 
 import org.junit.Test;
 
@@ -27,4 +30,13 @@ public class DistinctItemsSpecs
 		assertEquals(2, result);
 	}
 
+	@Test
+	public void whenAskedForIterator_shouldReturnNotNull()
+	{
+		sut = DistinctItems.create();
+		
+		Iterator result = sut.iterator();
+		
+		assertNotNull(result);
+	}
 }

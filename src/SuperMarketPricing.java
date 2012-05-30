@@ -3,12 +3,10 @@ public class SuperMarketPricing {
 
 	private IGetReceipt register;
 	private IHoldItems basket;
-	private ICalculateTotal calculator;
 
-	public SuperMarketPricing(IGetReceipt register,ICalculateTotal calculator, IHoldItems basket)
+	public SuperMarketPricing(IGetReceipt register,IHoldItems basket)
     {
 		this.register = register;
-		this.calculator = calculator;
 		this.basket = basket;
     }
 
@@ -19,6 +17,7 @@ public class SuperMarketPricing {
 
 	public IAmCurrency getTotal()
     {
-		return calculator.getTotal(basket);
+		IAmAReceipt receipt = register.getReceipt(basket);
+		return receipt.getTotal();
     }
 }
