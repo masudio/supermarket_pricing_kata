@@ -7,6 +7,7 @@ import java.util.AbstractMap;
 import org.junit.Test;
 
 
+
 public class PriceListSpecs
 {
 	private IHoldPrices sut;
@@ -18,8 +19,9 @@ public class PriceListSpecs
 		IAmInfoForADistinctItem mockItemInfo = mock(IAmInfoForADistinctItem.class);
 		IAmADistinctItem mockDistinctItem = mock(IAmADistinctItem.class);
 		IAmCurrency expectedResult = mock(IAmCurrency.class);
+		stub(mockDistinctItem.getQuantity()).toReturn(5);
 		stub(mockMap.get(mockDistinctItem)).toReturn(mockItemInfo);
-		stub(mockItemInfo.getPriceFor(mockDistinctItem)).toReturn(expectedResult);
+		stub(mockItemInfo.getPriceFor(5)).toReturn(expectedResult);
 		sut = new PriceList(mockMap);
 		
 		IAmCurrency result = sut.getPriceFor(mockDistinctItem);
@@ -34,8 +36,9 @@ public class PriceListSpecs
 		IAmInfoForADistinctItem mockItemInfo = null;
 		IAmADistinctItem mockDistinctItem = mock(IAmADistinctItem.class);
 		IAmCurrency expectedResult = mock(IAmCurrency.class);
+		stub(mockDistinctItem.getQuantity()).toReturn(5);
 		stub(mockMap.get(mockDistinctItem)).toReturn(mockItemInfo);
-		stub(mockItemInfo.getPriceFor(mockDistinctItem)).toReturn(expectedResult);
+		stub(mockItemInfo.getPriceFor(5)).toReturn(expectedResult);
 		sut = new PriceList(mockMap);
 		
 		IAmCurrency result = sut.getPriceFor(mockDistinctItem);

@@ -1,4 +1,5 @@
 
+
 public class PriceChecker implements IPriceItemLists
 {
 	private IHoldPrices priceHolder;

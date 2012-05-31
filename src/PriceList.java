@@ -1,6 +1,7 @@
 import java.util.AbstractMap;
 
 
+
 public class PriceList implements IHoldPrices
 {
 
@@ -14,7 +15,7 @@ public class PriceList implements IHoldPrices
 	@Override
 	public IAmCurrency getPriceFor(IAmADistinctItem distinctItem)
 	{
-		return (IAmCurrency)((IAmInfoForADistinctItem)map.get(distinctItem)).getPriceFor(distinctItem);
+		return (IAmCurrency)((IAmInfoForADistinctItem)map.get(distinctItem)).getPriceFor(distinctItem.getQuantity());
 	}
 
 }

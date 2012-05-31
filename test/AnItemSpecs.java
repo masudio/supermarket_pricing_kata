@@ -3,6 +3,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 
+
 public class AnItemSpecs
 {
 	private IAmAnItem sut;

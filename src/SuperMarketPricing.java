@@ -1,4 +1,5 @@
 
+
 public class SuperMarketPricing {
 
 	private IGetReceipt register;

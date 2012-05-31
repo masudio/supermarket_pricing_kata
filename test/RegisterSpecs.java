@@ -4,6 +4,7 @@ import static org.mockito.Mockito.stub;
 
 import org.junit.Test;
 
+
 public class RegisterSpecs
 {
 	private IGetReceipt sut;

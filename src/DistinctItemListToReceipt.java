@@ -1,4 +1,5 @@
 
+
 public class DistinctItemListToReceipt implements IConvertDistinctItemListToReceipt
 {
 

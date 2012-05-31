@@ -5,6 +5,7 @@ import static org.mockito.Mockito.stub;
 
 import org.junit.Test;
 
+
 public class DistinctItemSpecs
 {
 	private IAmADistinctItem sut;

@@ -1,4 +1,5 @@
 
+
 public interface IAmCurrency
 {
 	IAmCurrency add(IAmCurrency addend);

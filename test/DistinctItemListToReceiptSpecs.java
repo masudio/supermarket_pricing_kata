@@ -6,6 +6,7 @@ import java.util.Iterator;
 
 import org.junit.Test;
 
+
 public class DistinctItemListToReceiptSpecs
 {
 	private IConvertDistinctItemListToReceipt sut;

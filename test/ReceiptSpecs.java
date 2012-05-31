@@ -3,6 +3,7 @@ import static org.mockito.Mockito.*;
 
 import org.junit.Test;
 
+
 public class ReceiptSpecs
 {
 	private IAmAReceipt sut;

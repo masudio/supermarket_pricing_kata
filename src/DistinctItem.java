@@ -1,3 +1,4 @@
+
 public class DistinctItem implements IAmADistinctItem
 {
 	private int quantity;
@@ -31,4 +32,10 @@ public class DistinctItem implements IAmADistinctItem
 	{
 		return item.hashCode();
 	}
+
+	@Override
+    public int getQuantity()
+    {
+		return quantity;
+    }
 }

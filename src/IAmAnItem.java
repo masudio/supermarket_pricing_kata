@@ -1,4 +1,6 @@
 
+
+
 public interface IAmAnItem
 {
 	boolean equals(IAmAnItem other);

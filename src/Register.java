@@ -1,4 +1,5 @@
 
+
 public class Register implements IGetReceipt
 {
 	private IConvertDistinctItemListToReceipt receiptFormatter;

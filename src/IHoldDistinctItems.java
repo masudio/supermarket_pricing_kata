@@ -1,3 +1,4 @@
+
 public interface IHoldDistinctItems extends Iterable
 {
 	public int numberOfDistinctItems();

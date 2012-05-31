@@ -1,4 +1,5 @@
 
+
 public class Receipt implements IAmAReceipt
 {
 	private IHoldDistinctItems distinctItemList;

@@ -1,4 +1,5 @@
 
+
 public class Money implements IAmCurrency
 {
 	private int dollars;

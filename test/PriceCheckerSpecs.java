@@ -3,6 +3,7 @@ import static org.junit.Assert.*;
 import java.util.Iterator;
 
 import org.junit.Test;
+
 import static org.mockito.Mockito.*;
 
 public class PriceCheckerSpecs
