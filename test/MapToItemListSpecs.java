@@ -9,6 +9,10 @@ import java.util.Set;
 
 import org.junit.Test;
 
+import contracts.IAmAnItem;
+import contracts.IConvertMapToItemList;
+import contracts.IHoldDistinctItems;
+
 
 public class MapToItemListSpecs
 {

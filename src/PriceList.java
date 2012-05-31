@@ -1,5 +1,10 @@
 import java.util.AbstractMap;
 
+import contracts.IAmADistinctItem;
+import contracts.IAmCurrency;
+import contracts.IAmInfoForADistinctItem;
+import contracts.IHoldPrices;
+
 
 
 public class PriceList implements IHoldPrices

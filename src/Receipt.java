@@ -1,3 +1,8 @@
+import contracts.IAmAReceipt;
+import contracts.IAmCurrency;
+import contracts.IHoldDistinctItems;
+import contracts.IPriceItemLists;
+
 
 
 public class Receipt implements IAmAReceipt

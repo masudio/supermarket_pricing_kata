@@ -1,3 +1,9 @@
+import contracts.IAmADistinctItem;
+import contracts.IAmCurrency;
+import contracts.IHoldDistinctItems;
+import contracts.IHoldPrices;
+import contracts.IPriceItemLists;
+
 
 
 public class PriceChecker implements IPriceItemLists

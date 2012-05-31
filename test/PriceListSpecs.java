@@ -6,6 +6,11 @@ import java.util.AbstractMap;
 
 import org.junit.Test;
 
+import contracts.IAmADistinctItem;
+import contracts.IAmCurrency;
+import contracts.IAmInfoForADistinctItem;
+import contracts.IHoldPrices;
+
 
 
 public class PriceListSpecs

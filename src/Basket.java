@@ -2,6 +2,9 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.LinkedList;
 
+import contracts.IHoldItems;
+import contracts.Item;
+
 
 
 public class Basket implements IHoldItems

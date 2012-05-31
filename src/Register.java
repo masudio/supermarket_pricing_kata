@@ -1,3 +1,9 @@
+import contracts.IAmAReceipt;
+import contracts.IConvertBasketToItemList;
+import contracts.IConvertDistinctItemListToReceipt;
+import contracts.IGetReceipt;
+import contracts.IHoldItems;
+
 
 
 public class Register implements IGetReceipt

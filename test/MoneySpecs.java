@@ -2,6 +2,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import contracts.IAmCurrency;
+
 import static org.mockito.Mockito.*;
 
 public class MoneySpecs

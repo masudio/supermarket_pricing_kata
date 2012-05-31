@@ -2,6 +2,10 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import contracts.IAmCurrency;
+import contracts.IAmInfoForADistinctItem;
+import contracts.Item;
+
 
 public class DistinctItemInfoSpecs
 {

@@ -6,6 +6,10 @@ import java.util.AbstractMap;
 
 import org.junit.Test;
 
+import contracts.IAmAnItem;
+import contracts.IConvertBasketToMap;
+import contracts.IHoldItems;
+
 
 
 public class BasketToMapSpecs

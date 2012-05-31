@@ -1,6 +1,10 @@
 import java.util.AbstractMap;
 import java.util.HashMap;
 
+import contracts.IAmAnItem;
+import contracts.IConvertBasketToMap;
+import contracts.IHoldItems;
+
 
 public class BasketToMap implements IConvertBasketToMap
 {

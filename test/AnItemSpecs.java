@@ -2,6 +2,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import contracts.IAmAnItem;
+import contracts.Item;
+
 
 
 public class AnItemSpecs

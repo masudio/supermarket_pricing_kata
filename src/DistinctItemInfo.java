@@ -1,3 +1,7 @@
+import contracts.IAmCurrency;
+import contracts.IAmInfoForADistinctItem;
+import contracts.Item;
+
 
 public class DistinctItemInfo implements IAmInfoForADistinctItem
 {

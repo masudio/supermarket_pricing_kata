@@ -1,3 +1,7 @@
+import contracts.IAmAReceipt;
+import contracts.IConvertDistinctItemListToReceipt;
+import contracts.IHoldDistinctItems;
+
 
 
 public class DistinctItemListToReceipt implements IConvertDistinctItemListToReceipt

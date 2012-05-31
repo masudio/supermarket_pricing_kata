@@ -4,6 +4,9 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
+import contracts.IHoldItems;
+import contracts.Item;
+
 
 public class BasketSpecs
 {

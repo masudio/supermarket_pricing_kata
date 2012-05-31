@@ -7,6 +7,10 @@ import java.util.Iterator;
 
 import org.junit.Test;
 
+import contracts.IAmAnItem;
+import contracts.IHoldDistinctItems;
+import contracts.Item;
+
 
 public class DistinctItemsSpecs
 {

@@ -6,6 +6,10 @@ import java.util.Iterator;
 
 import org.junit.Test;
 
+import contracts.IAmAReceipt;
+import contracts.IConvertDistinctItemListToReceipt;
+import contracts.IHoldDistinctItems;
+
 
 public class DistinctItemListToReceiptSpecs
 {

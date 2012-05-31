@@ -1,3 +1,8 @@
+import contracts.IAmAReceipt;
+import contracts.IAmCurrency;
+import contracts.IGetReceipt;
+import contracts.IHoldItems;
+
 
 
 public class SuperMarketPricing {

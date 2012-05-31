@@ -1,3 +1,6 @@
+import contracts.IAmAnItem;
+import contracts.Item;
+
 
 
 public class AnItem implements IAmAnItem

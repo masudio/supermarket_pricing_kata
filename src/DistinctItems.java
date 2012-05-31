@@ -2,6 +2,9 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
+import contracts.IAmADistinctItem;
+import contracts.IHoldDistinctItems;
+
 
 
 public class DistinctItems implements IHoldDistinctItems

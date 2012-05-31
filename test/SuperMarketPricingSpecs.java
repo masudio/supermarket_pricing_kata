@@ -3,6 +3,11 @@ import static org.mockito.Mockito.*;
 
 import org.junit.Test;
 
+import contracts.IAmAReceipt;
+import contracts.IAmCurrency;
+import contracts.IGetReceipt;
+import contracts.IHoldItems;
+
 
 public class SuperMarketPricingSpecs
 {

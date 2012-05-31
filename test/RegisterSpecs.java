@@ -4,6 +4,13 @@ import static org.mockito.Mockito.stub;
 
 import org.junit.Test;
 
+import contracts.IAmAReceipt;
+import contracts.IConvertBasketToItemList;
+import contracts.IConvertDistinctItemListToReceipt;
+import contracts.IGetReceipt;
+import contracts.IHoldDistinctItems;
+import contracts.IHoldItems;
+
 
 public class RegisterSpecs
 {

@@ -5,6 +5,9 @@ import static org.mockito.Mockito.stub;
 
 import org.junit.Test;
 
+import contracts.IAmADistinctItem;
+import contracts.IAmAnItem;
+
 
 public class DistinctItemSpecs
 {

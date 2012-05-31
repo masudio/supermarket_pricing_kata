@@ -1,3 +1,5 @@
+import contracts.IAmCurrency;
+
 
 
 public class Money implements IAmCurrency

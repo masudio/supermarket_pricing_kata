@@ -1,3 +1,4 @@
+package contracts;
 
 
 public interface IAmCurrency

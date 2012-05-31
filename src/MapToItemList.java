@@ -1,6 +1,9 @@
 import java.util.AbstractMap;
 import java.util.Set;
 
+import contracts.IConvertMapToItemList;
+import contracts.IHoldDistinctItems;
+
 
 
 public class MapToItemList implements IConvertMapToItemList

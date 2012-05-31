@@ -6,6 +6,12 @@ import java.util.AbstractMap;
 
 import org.junit.Test;
 
+import contracts.IConvertBasketToItemList;
+import contracts.IConvertBasketToMap;
+import contracts.IConvertMapToItemList;
+import contracts.IHoldDistinctItems;
+import contracts.IHoldItems;
+
 
 public class BasketToItemListSpecs
 {

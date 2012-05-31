@@ -4,6 +4,12 @@ import java.util.Iterator;
 
 import org.junit.Test;
 
+import contracts.IAmADistinctItem;
+import contracts.IAmCurrency;
+import contracts.IHoldDistinctItems;
+import contracts.IHoldPrices;
+import contracts.IPriceItemLists;
+
 import static org.mockito.Mockito.*;
 
 public class PriceCheckerSpecs

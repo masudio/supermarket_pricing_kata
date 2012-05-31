@@ -1,3 +1,6 @@
+import contracts.IAmADistinctItem;
+import contracts.IAmAnItem;
+
 
 public class DistinctItem implements IAmADistinctItem
 {
