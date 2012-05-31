@@ -1,6 +1,7 @@
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.stub;
 
 import java.util.Iterator;
 
@@ -13,20 +14,23 @@ public class DistinctItemsSpecs
 	@Test
 	public void whenANewItemIsAdded_shouldIncrementListSize()
 	{
-		IAmAnItem mockItem = mock(IAmAnItem.class);
-		IAmAnItem mockItem2 = mock(IAmAnItem.class);
-		IAmADistinctItem mockDistinctItem = DistinctItem.create(mockItem, 3);
-		IAmADistinctItem mockDistinctItem2 = DistinctItem.create(mockItem2, 1);
+		IAmAnItem item = AnItem.create(Item.TOMATO);
+		IAmAnItem item2 = AnItem.create(Item.CRACKERS);
 		sut = DistinctItems.create();
 
-		sut.add(mockItem, 3);
+		sut.add(item, 3);
 		int result = sut.numberOfDistinctItems();
 
 		assertEquals(1, result);
 
-		sut.add(mockItem2, 1);
+		sut.add(item2, 1);
 		result = sut.numberOfDistinctItems();
 
+		assertEquals(2, result);
+		
+		sut.add(item2, 3);
+		result = sut.numberOfDistinctItems();
+		
 		assertEquals(2, result);
 	}
 

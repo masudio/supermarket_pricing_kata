@@ -26,4 +26,9 @@ public class DistinctItem implements IAmADistinctItem
 		return item;
 	}
 
+	@Override
+	public int hashCode()
+	{
+		return item.hashCode();
+	}
 }

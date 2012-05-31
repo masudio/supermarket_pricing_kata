@@ -26,4 +26,9 @@ public class AnItem implements IAmAnItem
 		return item;
     }
 
+	@Override
+	public int hashCode()
+	{
+		return item.hashCode();
+	}
 }

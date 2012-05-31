@@ -26,7 +26,13 @@ public class DistinctItems implements IHoldDistinctItems
 	@Override
     public void add(Object item,Object quantity)
     {
-	    allItems.add(DistinctItem.create(item, quantity));
+		IAmADistinctItem newItem = DistinctItem.create(item, quantity);
+		for(IAmADistinctItem distinctItem : allItems)
+        {
+	        if(distinctItem.equals(newItem)) return;
+        }
+		
+		allItems.add(newItem);
     }
 
 	@Override

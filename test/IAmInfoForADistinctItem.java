@@ -1,5 +1,5 @@
 
 public interface IAmInfoForADistinctItem
 {
-	IAmCurrency getPriceFor(IAmADistinctItem mockDistinctItem);
+	IAmCurrency getPriceFor(IAmADistinctItem distinctItem);
 }
