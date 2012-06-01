@@ -1,4 +1,0 @@
-so i'm going to implement it so that it's only possible to have a deal with only a multiple of a single item.
-
-later, when i'm done this version, I'll refactor so that it's possible to have deals with multiple distinct items, each with their own quantity.
-
