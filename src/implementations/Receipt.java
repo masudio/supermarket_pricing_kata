@@ -42,6 +42,7 @@ public class Receipt implements IAmAReceipt
 			        + distinctItem.getItem().getItem().toString() + "\n";
 		}
 
+		result += "\n- - - - - - - - - - - - - - - -\n\nAND THE TOTAL COMES TO:\t" + getTotal();
 		return result;
 	}
 }

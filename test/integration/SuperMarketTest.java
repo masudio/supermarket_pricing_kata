@@ -27,7 +27,7 @@ public class SuperMarketTest
 		AbstractMap<Item,IAmInfoForADistinctItem> wrappedMap = new HashMap<Item,IAmInfoForADistinctItem>();
 		wrappedMap.put(
 		        Item.TOMATO,
-		        new DistinctItemInfo(Item.TOMATO, Money.create(0, 50), 3, Money
+		        new DistinctItemInfo(Item.TOMATO, Money.create(0, 75), 3, Money
 		                .create(1, 25)));
 		wrappedMap.put(Item.CRACKERS,
 		        new DistinctItemInfo(Item.CRACKERS, Money.create(3, 99), 3,
@@ -37,11 +37,12 @@ public class SuperMarketTest
 
 		SuperMarketPricing sut = new SuperMarketPricing(new Register(
 		        new BasketToItemList(new BasketToMap(), new MapToItemList()),
-		        new DistinctItemListToReceipt(new PriceChecker(new PriceList(itemPriceMap)))), Basket.create(new Item[] {
+		        new DistinctItemListToReceipt(new PriceChecker(new PriceList(
+		                itemPriceMap)))), Basket.create(new Item[] {
 		        Item.TOMATO, Item.TOMATO, Item.CRACKERS, Item.CRACKERS,
-		        Item.TOMATO, Item.CRACKERS }));
+		        Item.TOMATO, Item.CRACKERS, Item.TOMATO }));
 
 		System.out.println("Total: " + sut.getTotal());
-		System.out.println("\nYour receipt: " + sut.getReceipt());
+		System.out.println("\nYour receipt: \n\n" + sut.getReceipt());
 	}
 }

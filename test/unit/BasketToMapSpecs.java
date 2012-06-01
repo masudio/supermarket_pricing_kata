@@ -3,10 +3,10 @@ package unit;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.stub;
-
 import implementations.BasketToMap;
 
 import java.util.AbstractMap;
+import java.util.Iterator;
 
 import org.junit.Test;
 
@@ -26,8 +26,10 @@ public class BasketToMapSpecs
 		IHoldItems mockBasket = mock(IHoldItems.class);
 		IAmAnItem mockItem1 = mock(IAmAnItem.class);
 		IAmAnItem mockItem2 = mock(IAmAnItem.class);
-		stub(mockBasket.hasNext()).toReturn(true).toReturn(true).toReturn(false);
-		stub(mockBasket.next()).toReturn(mockItem1).toReturn(mockItem2);
+		Iterator mockIterator = mock(Iterator.class);
+		stub(mockBasket.iterator()).toReturn(mockIterator);
+		stub(mockIterator.hasNext()).toReturn(true).toReturn(true).toReturn(false);
+		stub(mockIterator.next()).toReturn(mockItem1).toReturn(mockItem2);
 		sut = new BasketToMap();
 		
 		AbstractMap result = sut.convert(mockBasket);

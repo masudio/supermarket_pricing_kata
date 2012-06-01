@@ -1,61 +1,42 @@
 package unit;
 
-import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
 import implementations.Basket;
+
+import java.util.Iterator;
 
 import org.junit.Test;
 
 import contracts.IHoldItems;
 import contracts.Item;
 
-
 public class BasketSpecs
 {
 	private IHoldItems sut;
 
 	@Test
-	public void whenAskedIfHasNext_andItDoes_shouldReturnTrue()
+	public void whenAskedForIterator_shouldReturnAnIterator()
 	{
-		Item[] items = { Item.TOMATO, Item.CRACKERS, Item.TOMATO,
-		        Item.CRACKERS, Item.TOMATO };
-		sut = Basket.create(items);
-		
-		boolean result = sut.hasNext();
-		
-		assertTrue(result);
+		sut = Basket.create(new Item[] {});
+
+		Iterator result = sut.iterator();
+
+		assertNotNull(result);
 	}
 
 	@Test
-	public void whenAskedIfHasNext_andItDoesNot_shouldReturnFalse()
+	public void whenGivenAnArrayWithACertainNumberOfElements_shouldGetAnIteratorWithThatManyElementsToo()
 	{
-		Item[] items = {};
-		sut = Basket.create(items);
-		
-		boolean result = sut.hasNext();
-		
-		assertFalse(result);
-	}
-	
-	@Test
-	public void whenAskedForNext_andItHasNext_shouldReturnSomething()
-	{
-		Item[] items = { Item.TOMATO, Item.CRACKERS, Item.TOMATO,
-		        Item.CRACKERS, Item.TOMATO };
-		sut = Basket.create(items);
-		
-		Object result = sut.next();
-		
-		assertNotNull(result);
-	}
-	
-	@Test(expected=UnsupportedOperationException.class)
-	public void whenAskedToRemove_shouldThrowException()
-	{
-		Item[] items = {};
-		sut = Basket.create(items);
-		
-		sut.remove();
+		sut = Basket.create(new Item[] { Item.TOMATO, Item.TOMATO, Item.TOMATO,
+		        Item.CRACKERS });
+		int result = 0;
+
+		for(Object element : sut)
+		{
+			result++;
+		}
+
+		assertEquals(4, result);
 	}
 }
