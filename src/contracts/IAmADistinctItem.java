@@ -7,4 +7,5 @@ public interface IAmADistinctItem
 	boolean equals(IAmADistinctItem other);
 	int hashCode();
 	int getQuantity();
+	void add(int quantity);
 }
